@@ -78,7 +78,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         updatedCart.splice(productIndex, 1); // Remove the product
         setCart(updatedCart);
         localStorage.setItem("@RocketShoes:cart", JSON.stringify(updatedCart));
-        toast.success("Produto removido com sucesso.")
+        toast.success("Produto removido.")
       } else {
         throw Error();
       }
